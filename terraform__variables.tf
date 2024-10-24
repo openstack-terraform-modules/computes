@@ -10,12 +10,11 @@ variable deployment {
       domain_name = string
     })
 }
-
+*/
 variable cluster_prefix {
     type = string
 }
 
-variable compute_count {
-    type = number
+variable group_prefix {
+    type = string
 }
-*/

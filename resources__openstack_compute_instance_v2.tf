@@ -1,5 +1,5 @@
 resource openstack_compute_instance_v2 compute {
-    count = 1 #local.compute_count
+    count = length(element(var.filter-volumes.group_prefix))
 
     name = join("-", [
         local.cluster_prefix,
@@ -7,6 +7,4 @@ resource openstack_compute_instance_v2 compute {
     ])
 
     flavor_id = local.flavor_id
-    
-    
 }
