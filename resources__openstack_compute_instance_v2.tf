@@ -1,5 +1,5 @@
 resource openstack_compute_instance_v2 compute {
-    count = local.compute_count
+    count = 1 #local.compute_count
 
     name = join("-", [
         local.cluster_prefix,
