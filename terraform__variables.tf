@@ -1,18 +1,18 @@
-variable filter-volumes {
-    type = map
-}
-/*
-variable deployment {
+variable get-volumes {
     type = object({
-      id = string
-      uuid = string
-      tenant_name = string
-      domain_name = string
+        deployment = object({
+            id = string
+            uuid = string
+            tenant_name = string
+            domain_name = string
+        })
+        inventory_file_path = string
+        cluster_prefix = string
+        volume_name = string
     })
 }
-*/
-variable cluster_prefix {
-    type = string
+variable filter-volumes {
+    type = map
 }
 
 variable group_prefix {
