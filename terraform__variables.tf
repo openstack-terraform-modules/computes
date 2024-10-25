@@ -18,3 +18,7 @@ variable filter-volumes {
 variable group_prefix {
     type = string
 }
+
+variable flavor_name {
+    type = string
+}
