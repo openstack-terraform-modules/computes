@@ -1,3 +1,4 @@
+/*
 variable get-volumes {
     type = object({
         deployment = object({
@@ -11,6 +12,7 @@ variable get-volumes {
         volume_name = string
     })
 }
+*/
 
 variable deployment {
     type = object({
@@ -20,10 +22,11 @@ variable deployment {
         domain_name = string
     })
 }
+/*
 variable filter-volumes {
     type = map
 }
-
+*/
 variable group_prefix {
     type = string
 }
