@@ -27,6 +27,9 @@ variable filter-volumes {
     type = map
 }
 */
+variable cluster_prefix {
+    type = string
+}
 variable group_prefix {
     type = string
 }
