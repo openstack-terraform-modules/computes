@@ -11,6 +11,15 @@ variable get-volumes {
         volume_name = string
     })
 }
+
+variable deployment {
+    type = object({
+        id = string
+        uuid = string
+        tenant_name = string
+        domain_name = string
+    })
+}
 variable filter-volumes {
     type = map
 }
