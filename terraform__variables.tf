@@ -37,3 +37,24 @@ variable group_prefix {
 variable flavor_name {
     type = string
 }
+variable compute_count {
+    type = number
+}
+
+/*
+variable computes {
+    type = object({
+      prefix = string
+      nodes = object({
+        managers = object({
+          count = number
+          flavor = string
+        })
+        computes = object({
+          count = number
+          flavor = string
+        })
+      })
+    })
+}
+*/
