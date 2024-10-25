@@ -1,9 +1,10 @@
 resource openstack_compute_instance_v2 compute {
-    count = local.count
+    for_each = lookup(var.filter-volumes, var.group_prefix)
+    #local.count
 
     name = join("-", [
         local.cluster_prefix,
-        count.index 
+        each.key
     ])
 
     flavor_name = local.flavor_name
