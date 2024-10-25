@@ -1,5 +1,5 @@
 resource openstack_compute_instance_v2 compute {
-    for_each = lookup(var.filter-volumes, var.group_prefix).volumes
+    for_each = local.volumes
     #local.count
 
     name = join("-", [
